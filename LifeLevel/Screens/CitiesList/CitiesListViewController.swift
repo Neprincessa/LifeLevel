@@ -1,18 +1,19 @@
 //
-//  ViewController.swift
+//  CitiesListViewController.swift
 //  LifeLevel
 //
-//  Created by Chausov Alexander on 18.07.2018.
+//  Created by Александр Чаусов on 20.07.2018.
 //  Copyright © 2018 Neprincessa. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CitiesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +23,3 @@ class ViewController: UIViewController {
 
 
 }
-

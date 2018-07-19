@@ -8,22 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		183BE1FE20FF86F900CC6AC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BE1FD20FF86F900CC6AC4 /* AppDelegate.swift */; };
-		183BE20020FF86F900CC6AC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BE1FF20FF86F900CC6AC4 /* ViewController.swift */; };
-		183BE20320FF86F900CC6AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20120FF86F900CC6AC4 /* Main.storyboard */; };
 		183BE20520FF86FC00CC6AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20420FF86FC00CC6AC4 /* Assets.xcassets */; };
 		183BE20820FF86FC00CC6AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20620FF86FC00CC6AC4 /* LaunchScreen.storyboard */; };
 		74609A9B2C31811FB45596BC /* Pods_LifeLevel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87712564AF625E195261585B /* Pods_LifeLevel.framework */; };
+		844B19E421013AFA00A622ED /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19E221013AFA00A622ED /* MainTabBarViewController.swift */; };
+		844B19E521013AFA00A622ED /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19E321013AFA00A622ED /* MainTabBarViewController.xib */; };
+		844B19E921013B4E00A622ED /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19E721013B4E00A622ED /* CitiesListViewController.swift */; };
+		844B19EA21013B4E00A622ED /* CitiesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19E821013B4E00A622ED /* CitiesListViewController.xib */; };
+		844B19EC21013EB100A622ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844B19EB21013EB100A622ED /* Info.plist */; };
+		844B19F021013F7200A622ED /* SearchCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19EE21013F7200A622ED /* SearchCitiesViewController.swift */; };
+		844B19F121013F7200A622ED /* SearchCitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19EF21013F7200A622ED /* SearchCitiesViewController.xib */; };
+		844B19F521013F9300A622ED /* SavedCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19F321013F9300A622ED /* SavedCitiesViewController.swift */; };
+		844B19F621013F9300A622ED /* SavedCitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19F421013F9300A622ED /* SavedCitiesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		183BE1FA20FF86F900CC6AC4 /* LifeLevel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLevel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183BE1FD20FF86F900CC6AC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		183BE1FF20FF86F900CC6AC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		183BE20220FF86F900CC6AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183BE20420FF86FC00CC6AC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183BE20720FF86FC00CC6AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		183BE20920FF86FC00CC6AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		436B195B0911057FFE446066 /* Pods-LifeLevel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLevel.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel.release.xcconfig"; sourceTree = "<group>"; };
+		844B19E221013AFA00A622ED /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		844B19E321013AFA00A622ED /* MainTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
+		844B19E721013B4E00A622ED /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
+		844B19E821013B4E00A622ED /* CitiesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesListViewController.xib; sourceTree = "<group>"; };
+		844B19EB21013EB100A622ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LifeLevel/Info.plist; sourceTree = SOURCE_ROOT; };
+		844B19EE21013F7200A622ED /* SearchCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesViewController.swift; sourceTree = "<group>"; };
+		844B19EF21013F7200A622ED /* SearchCitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCitiesViewController.xib; sourceTree = "<group>"; };
+		844B19F321013F9300A622ED /* SavedCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCitiesViewController.swift; sourceTree = "<group>"; };
+		844B19F421013F9300A622ED /* SavedCitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedCitiesViewController.xib; sourceTree = "<group>"; };
 		87712564AF625E195261585B /* Pods_LifeLevel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeLevel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE644F139A47D948E99A7155 /* Pods-LifeLevel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLevel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,14 +74,92 @@
 		183BE1FC20FF86F900CC6AC4 /* LifeLevel */ = {
 			isa = PBXGroup;
 			children = (
-				183BE1FD20FF86F900CC6AC4 /* AppDelegate.swift */,
-				183BE1FF20FF86F900CC6AC4 /* ViewController.swift */,
-				183BE20120FF86F900CC6AC4 /* Main.storyboard */,
-				183BE20420FF86FC00CC6AC4 /* Assets.xcassets */,
-				183BE20620FF86FC00CC6AC4 /* LaunchScreen.storyboard */,
-				183BE20920FF86FC00CC6AC4 /* Info.plist */,
+				844B19DC210139BD00A622ED /* Application */,
+				844B19DB2101399700A622ED /* Library */,
+				844B19DD210139C400A622ED /* Resources */,
+				844B19D82101396900A622ED /* Screens */,
 			);
 			path = LifeLevel;
+			sourceTree = "<group>";
+		};
+		844B19D82101396900A622ED /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				844B19F221013F7700A622ED /* SavedCities */,
+				844B19ED21013F4900A622ED /* SearchCities */,
+				844B19E621013B0E00A622ED /* CitiesList */,
+				844B19D92101397000A622ED /* MainTabBar */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		844B19D92101397000A622ED /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				844B19E221013AFA00A622ED /* MainTabBarViewController.swift */,
+				844B19E321013AFA00A622ED /* MainTabBarViewController.xib */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		844B19DA2101398900A622ED /* Extansion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extansion;
+			sourceTree = "<group>";
+		};
+		844B19DB2101399700A622ED /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				844B19DA2101398900A622ED /* Extansion */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		844B19DC210139BD00A622ED /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				183BE20620FF86FC00CC6AC4 /* LaunchScreen.storyboard */,
+				183BE1FD20FF86F900CC6AC4 /* AppDelegate.swift */,
+				844B19EB21013EB100A622ED /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		844B19DD210139C400A622ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				183BE20420FF86FC00CC6AC4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		844B19E621013B0E00A622ED /* CitiesList */ = {
+			isa = PBXGroup;
+			children = (
+				844B19E721013B4E00A622ED /* CitiesListViewController.swift */,
+				844B19E821013B4E00A622ED /* CitiesListViewController.xib */,
+			);
+			path = CitiesList;
+			sourceTree = "<group>";
+		};
+		844B19ED21013F4900A622ED /* SearchCities */ = {
+			isa = PBXGroup;
+			children = (
+				844B19EE21013F7200A622ED /* SearchCitiesViewController.swift */,
+				844B19EF21013F7200A622ED /* SearchCitiesViewController.xib */,
+			);
+			path = SearchCities;
+			sourceTree = "<group>";
+		};
+		844B19F221013F7700A622ED /* SavedCities */ = {
+			isa = PBXGroup;
+			children = (
+				844B19F321013F9300A622ED /* SavedCitiesViewController.swift */,
+				844B19F421013F9300A622ED /* SavedCitiesViewController.xib */,
+			);
+			path = SavedCities;
 			sourceTree = "<group>";
 		};
 		93CB7AF3D9FE4B70AC4FCBC0 /* Frameworks */ = {
@@ -148,9 +239,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844B19E521013AFA00A622ED /* MainTabBarViewController.xib in Resources */,
+				844B19EA21013B4E00A622ED /* CitiesListViewController.xib in Resources */,
 				183BE20820FF86FC00CC6AC4 /* LaunchScreen.storyboard in Resources */,
+				844B19F121013F7200A622ED /* SearchCitiesViewController.xib in Resources */,
+				844B19EC21013EB100A622ED /* Info.plist in Resources */,
+				844B19F621013F9300A622ED /* SavedCitiesViewController.xib in Resources */,
 				183BE20520FF86FC00CC6AC4 /* Assets.xcassets in Resources */,
-				183BE20320FF86F900CC6AC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,22 +295,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183BE20020FF86F900CC6AC4 /* ViewController.swift in Sources */,
 				183BE1FE20FF86F900CC6AC4 /* AppDelegate.swift in Sources */,
+				844B19E421013AFA00A622ED /* MainTabBarViewController.swift in Sources */,
+				844B19F021013F7200A622ED /* SearchCitiesViewController.swift in Sources */,
+				844B19F521013F9300A622ED /* SavedCitiesViewController.swift in Sources */,
+				844B19E921013B4E00A622ED /* CitiesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		183BE20120FF86F900CC6AC4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183BE20220FF86F900CC6AC4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		183BE20620FF86FC00CC6AC4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,11 +438,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LifeLevel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neprincessa.lifelevel.LifeLevel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,11 +457,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LifeLevel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neprincessa.lifelevel.LifeLevel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
