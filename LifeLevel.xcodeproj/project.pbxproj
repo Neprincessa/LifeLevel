@@ -12,6 +12,7 @@
 		183BE20320FF86F900CC6AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20120FF86F900CC6AC4 /* Main.storyboard */; };
 		183BE20520FF86FC00CC6AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20420FF86FC00CC6AC4 /* Assets.xcassets */; };
 		183BE20820FF86FC00CC6AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20620FF86FC00CC6AC4 /* LaunchScreen.storyboard */; };
+		74609A9B2C31811FB45596BC /* Pods_LifeLevel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87712564AF625E195261585B /* Pods_LifeLevel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		183BE20420FF86FC00CC6AC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183BE20720FF86FC00CC6AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183BE20920FF86FC00CC6AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436B195B0911057FFE446066 /* Pods-LifeLevel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLevel.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel.release.xcconfig"; sourceTree = "<group>"; };
+		87712564AF625E195261585B /* Pods_LifeLevel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeLevel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE644F139A47D948E99A7155 /* Pods-LifeLevel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLevel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74609A9B2C31811FB45596BC /* Pods_LifeLevel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				183BE1FC20FF86F900CC6AC4 /* LifeLevel */,
 				183BE1FB20FF86F900CC6AC4 /* Products */,
+				F398AD5552B21F580FA9A3CF /* Pods */,
+				93CB7AF3D9FE4B70AC4FCBC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LifeLevel;
 			sourceTree = "<group>";
 		};
+		93CB7AF3D9FE4B70AC4FCBC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87712564AF625E195261585B /* Pods_LifeLevel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F398AD5552B21F580FA9A3CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE644F139A47D948E99A7155 /* Pods-LifeLevel.debug.xcconfig */,
+				436B195B0911057FFE446066 /* Pods-LifeLevel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183BE20C20FF86FC00CC6AC4 /* Build configuration list for PBXNativeTarget "LifeLevel" */;
 			buildPhases = (
+				A5677751FBF6C744EFBEA7FC /* [CP] Check Pods Manifest.lock */,
 				183BE1F620FF86F900CC6AC4 /* Sources */,
 				183BE1F720FF86F900CC6AC4 /* Frameworks */,
 				183BE1F820FF86F900CC6AC4 /* Resources */,
+				F1944087DA53B4FA34D4DE43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5677751FBF6C744EFBEA7FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeLevel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1944087DA53B4FA34D4DE43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		183BE1F620FF86F900CC6AC4 /* Sources */ = {
@@ -278,14 +343,12 @@
 		};
 		183BE20D20FF86FC00CC6AC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE644F139A47D948E99A7155 /* Pods-LifeLevel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LifeLevel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neprincessa.lifelevel.LifeLevel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +358,12 @@
 		};
 		183BE20E20FF86FC00CC6AC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436B195B0911057FFE446066 /* Pods-LifeLevel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LifeLevel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neprincessa.lifelevel.LifeLevel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
