@@ -8,6 +8,7 @@
 
 import UIKit
 
+//MARK: - Constants
 struct ColorConstants {
     static let mainColor = UIColor.red
 }

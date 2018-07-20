@@ -51,5 +51,6 @@ private extension MainTabBarViewController {
         tabBar.tintColor = UIColor.white
         tabBar.barTintColor = ColorConstants.mainColor
     }
-    
 }
+    
+
