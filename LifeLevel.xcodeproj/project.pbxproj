@@ -20,6 +20,8 @@
 		844B19F121013F7200A622ED /* SearchCitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19EF21013F7200A622ED /* SearchCitiesViewController.xib */; };
 		844B19F521013F9300A622ED /* SavedCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19F321013F9300A622ED /* SavedCitiesViewController.swift */; };
 		844B19F621013F9300A622ED /* SavedCitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19F421013F9300A622ED /* SavedCitiesViewController.xib */; };
+		844B19FA21014B7E00A622ED /* LLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19F921014B7E00A622ED /* LLNavigationController.swift */; };
+		844B19FD21014EB400A622ED /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19FC21014EB400A622ED /* ColorConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		844B19EF21013F7200A622ED /* SearchCitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCitiesViewController.xib; sourceTree = "<group>"; };
 		844B19F321013F9300A622ED /* SavedCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCitiesViewController.swift; sourceTree = "<group>"; };
 		844B19F421013F9300A622ED /* SavedCitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedCitiesViewController.xib; sourceTree = "<group>"; };
+		844B19F921014B7E00A622ED /* LLNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLNavigationController.swift; sourceTree = "<group>"; };
+		844B19FC21014EB400A622ED /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		87712564AF625E195261585B /* Pods_LifeLevel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeLevel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE644F139A47D948E99A7155 /* Pods-LifeLevel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLevel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,8 @@
 		844B19DB2101399700A622ED /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				844B19FB21014E9200A622ED /* Constants */,
+				844B19F721014AF900A622ED /* BaseClasses */,
 				844B19DA2101398900A622ED /* Extansion */,
 			);
 			path = Library;
@@ -160,6 +166,30 @@
 				844B19F421013F9300A622ED /* SavedCitiesViewController.xib */,
 			);
 			path = SavedCities;
+			sourceTree = "<group>";
+		};
+		844B19F721014AF900A622ED /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				844B19F821014B0D00A622ED /* LLNavigationController */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		844B19F821014B0D00A622ED /* LLNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				844B19F921014B7E00A622ED /* LLNavigationController.swift */,
+			);
+			path = LLNavigationController;
+			sourceTree = "<group>";
+		};
+		844B19FB21014E9200A622ED /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				844B19FC21014EB400A622ED /* ColorConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		93CB7AF3D9FE4B70AC4FCBC0 /* Frameworks */ = {
@@ -296,6 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				183BE1FE20FF86F900CC6AC4 /* AppDelegate.swift in Sources */,
+				844B19FA21014B7E00A622ED /* LLNavigationController.swift in Sources */,
+				844B19FD21014EB400A622ED /* ColorConstants.swift in Sources */,
 				844B19E421013AFA00A622ED /* MainTabBarViewController.swift in Sources */,
 				844B19F021013F7200A622ED /* SearchCitiesViewController.swift in Sources */,
 				844B19F521013F9300A622ED /* SavedCitiesViewController.swift in Sources */,

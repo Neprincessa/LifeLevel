@@ -2,7 +2,7 @@
 //  CitiesListViewController.swift
 //  LifeLevel
 //
-//  Created by Александр Чаусов on 20.07.2018.
+//  Created by Анастасия Худоярова on 20.07.2018.
 //  Copyright © 2018 Neprincessa. All rights reserved.
 //
 
@@ -12,14 +12,14 @@ class CitiesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureNavigationBar()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+private extension CitiesListViewController {
+    
+    func configureNavigationBar() {
+        title = "Список городов"
     }
-
-
 }

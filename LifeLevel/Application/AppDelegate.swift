@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  LifeLevel
 //
-//  Created by Chausov Alexander on 18.07.2018.
+//  Created by Анастасия Худоярова on 18.07.2018.
 //  Copyright © 2018 Neprincessa. All rights reserved.
 //
 
