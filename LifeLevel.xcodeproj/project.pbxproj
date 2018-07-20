@@ -109,7 +109,6 @@
 		844B19DA2101398900A622ED /* Extansion */ = {
 			isa = PBXGroup;
 			children = (
-				844B1A0421024BA000A622ED /* Gradient */,
 			);
 			path = Extansion;
 			sourceTree = "<group>";
@@ -191,13 +190,6 @@
 				844B19FC21014EB400A622ED /* ColorConstants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		844B1A0421024BA000A622ED /* Gradient */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Gradient;
 			sourceTree = "<group>";
 		};
 		93CB7AF3D9FE4B70AC4FCBC0 /* Frameworks */ = {

@@ -30,8 +30,9 @@ private extension LLNavigationController {
     
     func  setNavigationBarColor(){
         var colors = [UIColor]()
-        colors.append(UIColor(red: 240/255, green: 55/255, blue: 40/255, alpha: 1))
-        colors.append(UIColor(red: 255/255, green: 50/255, blue: 95/255, alpha: 1))
+        colors.append(UIColor(red: 100/255, green: 24/255, blue: 13/255, alpha: 1))
+        colors.append(UIColor(red: 255/255, green: 110/255, blue: 80/255, alpha: 1))
+
         navigationBar.setGradientBackground(colors: colors)
     }
 }
@@ -68,10 +69,13 @@ extension UINavigationBar {
         
         var updatedFrame = bounds
         updatedFrame.size.height += self.frame.origin.y
-        let gradientLayer = CAGradientLayer(frame: updatedFrame, colors: colors)
-        
+        updatedFrame.size.height += UIApplication.shared.statusBarFrame.height
+        var gradientLayer = CAGradientLayer(frame: updatedFrame, colors: colors)
         setBackgroundImage(gradientLayer.createGradientImage(), for: UIBarMetrics.default)
     }
 }
-
+func statusBarHeight() -> CGFloat {
+    let statusBarSize = UIApplication.shared.statusBarFrame.size
+    return Swift.min(statusBarSize.width, statusBarSize.height)
+}
 

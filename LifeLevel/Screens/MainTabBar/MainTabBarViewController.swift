@@ -17,6 +17,7 @@ class MainTabBarViewController: UITabBarController {
     }
 }
 
+//MARK: - Extansions
 private extension MainTabBarViewController {
     
     func configureTabs() {
@@ -52,5 +53,8 @@ private extension MainTabBarViewController {
         tabBar.barTintColor = ColorConstants.mainColor
     }
 }
+
+
+
     
 
