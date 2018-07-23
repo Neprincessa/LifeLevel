@@ -12,7 +12,7 @@ import Alamofire
 typealias CitiesListCompletionHandler = (_ success: Bool, _ value: [CityListEntity]?, _ error: Error?) -> Void
 
 class NetworkService {
-   
+    
     static let shared = NetworkService()
     
     func getCitiesList(handler: @escaping CitiesListCompletionHandler) {
@@ -50,4 +50,5 @@ class NetworkService {
             handler(true, citiesEntity, nil)
         }
     }
+    
 }

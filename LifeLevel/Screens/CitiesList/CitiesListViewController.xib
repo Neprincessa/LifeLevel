@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitiesListViewController" customModule="LifeLevel" customModuleProvider="target">
             <connections>
                 <outlet property="citiesTableView" destination="VFV-fB-ASE" id="rJH-93-Lq5"/>
+                <outlet property="infoLabel" destination="jNh-bd-oYd" id="IAp-Mf-l4E"/>
+                <outlet property="loader" destination="ZyS-YE-5xf" id="sB1-wp-rgG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,20 +23,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VFV-fB-ASE">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="6xa-UH-lyH"/>
                         <outlet property="delegate" destination="-1" id="w7k-Oj-0sB"/>
                     </connections>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-YE-5xf">
+                    <rect key="frame" x="178" y="323.5" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNh-bd-oYd">
+                    <rect key="frame" x="25" y="325" width="325" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jNh-bd-oYd" secondAttribute="trailing" constant="25" id="8Jl-b5-MOY"/>
+                <constraint firstItem="jNh-bd-oYd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EMD-FK-IjU"/>
+                <constraint firstItem="ZyS-YE-5xf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IJB-7a-LDv"/>
                 <constraint firstItem="VFV-fB-ASE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="M6e-Xi-Lfd"/>
-                <constraint firstItem="VFV-fB-ASE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RO6-mM-rKI"/>
+                <constraint firstItem="VFV-fB-ASE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RO6-mM-rKI"/>
                 <constraint firstItem="VFV-fB-ASE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="b8f-Zx-GXg"/>
+                <constraint firstItem="jNh-bd-oYd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="bqe-mG-vxF"/>
                 <constraint firstItem="VFV-fB-ASE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kVe-FC-aoR"/>
+                <constraint firstItem="ZyS-YE-5xf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oT6-3P-RIv"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="24.5" y="51.5"/>

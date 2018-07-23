@@ -70,10 +70,3 @@ private extension MainTabBarViewController {
         self.tabBar.layer.addSublayer(layer)
     }
 }
-
-
-// MARK: - Data
-
-struct City {
-    let nameOfCity: String
-}
