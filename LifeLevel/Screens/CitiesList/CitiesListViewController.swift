@@ -12,6 +12,7 @@ import UIKit
 class CitiesListViewController: UIViewController {
     
     @IBOutlet fileprivate weak var citiesTableView: UITableView!
+    @IBOutlet fileprivate weak var loaderView: UIView!
     @IBOutlet fileprivate weak var loader: UIActivityIndicatorView!
     @IBOutlet fileprivate weak var infoLabel: UILabel!
     
@@ -19,8 +20,11 @@ class CitiesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureNavigationBar()
         configureTableView()
+        configureLoader()
+        
         loadCities()
     }
 
@@ -37,6 +41,13 @@ private extension CitiesListViewController {
         citiesTableView.rowHeight = UITableViewAutomaticDimension
         citiesTableView.dataSource = self
         citiesTableView.delegate = self
+    }
+    
+    func configureLoader() {
+        loaderView.backgroundColor = ColorConstants.mainColor.withAlphaComponent(0.8)
+        loaderView.layer.cornerRadius = 15
+        loaderView.layer.masksToBounds = true
+        loader.activityIndicatorViewStyle = .whiteLarge
     }
     
     func loadCities() {
@@ -61,32 +72,38 @@ private extension CitiesListViewController {
 private extension CitiesListViewController {
 
     func setLoadingState() {
+        showLoader()
         citiesTableView.isHidden = true
-        loader.isHidden = false
         infoLabel.isHidden = true
-        loader.startAnimating()
     }
     
     func setNormalState() {
+        hideLoader()
         citiesTableView.isHidden = false
-        loader.isHidden = true
         infoLabel.isHidden = true
-        loader.stopAnimating()
     }
     
     func setErrorState() {
+        hideLoader()
         citiesTableView.isHidden = true
-        loader.isHidden = true
         infoLabel.isHidden = false
         infoLabel.text = "Упс, возникли проблемы с сервером :("
-        loader.stopAnimating()
     }
     
     func setEmptyState() {
+        hideLoader()
         citiesTableView.isHidden = true
-        loader.isHidden = true
         infoLabel.isHidden = false
         infoLabel.text = "Данные не найдены"
+    }
+    
+    func showLoader() {
+        loaderView.isHidden = false
+        loader.startAnimating()
+    }
+    
+    func hideLoader() {
+        loaderView.isHidden = true
         loader.stopAnimating()
     }
 }

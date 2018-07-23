@@ -10,6 +10,5 @@ import UIKit
 
 //MARK: - Constants
 struct ColorConstants {
-   //static let mainColor = UIColor.red
     static let mainColor = UIColor(red: 190/255, green: 50/255, blue: 25/255, alpha: 1)
 }
