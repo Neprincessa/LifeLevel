@@ -49,6 +49,9 @@ private extension CitiesListViewController {
         loaderView.layer.masksToBounds = true
         loader.activityIndicatorViewStyle = .whiteLarge
     }
+}
+
+private extension CitiesListViewController {
     
     func loadCities() {
         setLoadingState()
@@ -66,6 +69,23 @@ private extension CitiesListViewController {
                 self.setErrorState()
             }
         }
+    }
+    
+    func loadDetails(for city: City) {
+        showLoader()
+        NetworkService.shared.getCityDetails(with: city.link) { [weak self] (success, result, error) in
+            guard let `self` = self else { return }
+            self.hideLoader()
+            if success, let details = result {
+                self.openDetailsVC(with: details)
+            }
+        }
+    }
+    
+    func openDetailsVC(with details: CityDetailsEntity) {
+        let detailsVC = CityDetailsViewController()
+        detailsVC.configure(with: details)
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
 }
 
@@ -137,9 +157,7 @@ extension CitiesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let currentCity = citiesArray[indexPath.row]
-        NetworkService.shared.getCityDetails(with: currentCity.link) { (success, result, error) in
-            print(result)
-        }
+        loadDetails(for: currentCity)
     }
 }
 

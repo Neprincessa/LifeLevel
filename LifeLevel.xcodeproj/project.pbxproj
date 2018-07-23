@@ -12,6 +12,8 @@
 		183BE20820FF86FC00CC6AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183BE20620FF86FC00CC6AC4 /* LaunchScreen.storyboard */; };
 		74609A9B2C31811FB45596BC /* Pods_LifeLevel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87712564AF625E195261585B /* Pods_LifeLevel.framework */; };
 		841F1D3D2106800A00B37D41 /* CityDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F1D3C2106800A00B37D41 /* CityDetailsEntity.swift */; };
+		841F1D412106866700B37D41 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F1D3F2106866700B37D41 /* CityDetailsViewController.swift */; };
+		841F1D422106866700B37D41 /* CityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F1D402106866700B37D41 /* CityDetailsViewController.xib */; };
 		844B19E421013AFA00A622ED /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19E221013AFA00A622ED /* MainTabBarViewController.swift */; };
 		844B19E521013AFA00A622ED /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B19E321013AFA00A622ED /* MainTabBarViewController.xib */; };
 		844B19E921013B4E00A622ED /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B19E721013B4E00A622ED /* CitiesListViewController.swift */; };
@@ -38,6 +40,8 @@
 		183BE20720FF86FC00CC6AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		436B195B0911057FFE446066 /* Pods-LifeLevel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeLevel.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeLevel/Pods-LifeLevel.release.xcconfig"; sourceTree = "<group>"; };
 		841F1D3C2106800A00B37D41 /* CityDetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsEntity.swift; sourceTree = "<group>"; };
+		841F1D3F2106866700B37D41 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
+		841F1D402106866700B37D41 /* CityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityDetailsViewController.xib; sourceTree = "<group>"; };
 		844B19E221013AFA00A622ED /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		844B19E321013AFA00A622ED /* MainTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
 		844B19E721013B4E00A622ED /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
@@ -102,13 +106,23 @@
 			path = LifeLevel;
 			sourceTree = "<group>";
 		};
+		841F1D3E2106862500B37D41 /* CityDetails */ = {
+			isa = PBXGroup;
+			children = (
+				841F1D3F2106866700B37D41 /* CityDetailsViewController.swift */,
+				841F1D402106866700B37D41 /* CityDetailsViewController.xib */,
+			);
+			path = CityDetails;
+			sourceTree = "<group>";
+		};
 		844B19D82101396900A622ED /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				844B19E621013B0E00A622ED /* CitiesList */,
+				841F1D3E2106862500B37D41 /* CityDetails */,
+				844B19D92101397000A622ED /* MainTabBar */,
 				844B19F221013F7700A622ED /* SavedCities */,
 				844B19ED21013F4900A622ED /* SearchCities */,
-				844B19E621013B0E00A622ED /* CitiesList */,
-				844B19D92101397000A622ED /* MainTabBar */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -307,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844B19E521013AFA00A622ED /* MainTabBarViewController.xib in Resources */,
+				841F1D422106866700B37D41 /* CityDetailsViewController.xib in Resources */,
 				844B19EA21013B4E00A622ED /* CitiesListViewController.xib in Resources */,
 				183BE20820FF86FC00CC6AC4 /* LaunchScreen.storyboard in Resources */,
 				844B19F121013F7200A622ED /* SearchCitiesViewController.xib in Resources */,
@@ -373,6 +388,7 @@
 				844B19E421013AFA00A622ED /* MainTabBarViewController.swift in Sources */,
 				844B19F021013F7200A622ED /* SearchCitiesViewController.swift in Sources */,
 				841F1D3D2106800A00B37D41 /* CityDetailsEntity.swift in Sources */,
+				841F1D412106866700B37D41 /* CityDetailsViewController.swift in Sources */,
 				847CC8C12104D81500A66227 /* UITableView.swift in Sources */,
 				844B19F521013F9300A622ED /* SavedCitiesViewController.swift in Sources */,
 				844B19E921013B4E00A622ED /* CitiesListViewController.swift in Sources */,
