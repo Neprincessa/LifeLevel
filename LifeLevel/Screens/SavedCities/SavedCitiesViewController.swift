@@ -29,8 +29,8 @@ private extension SavedCitiesViewController {
     }
     
     func configureCities() {
-        let firstCity = City(nameOfCity: "Russia")
-        let secondCity = City(nameOfCity: "Spain")
+        let firstCity = City(nameOfCity: "Russia", link: "")
+        let secondCity = City(nameOfCity: "Spain", link: "")
         savedCities = [firstCity, secondCity, firstCity, secondCity,firstCity, secondCity,firstCity, secondCity, firstCity, secondCity,firstCity, secondCity,firstCity, secondCity,firstCity, secondCity,firstCity, secondCity,firstCity, secondCity]
     }
     

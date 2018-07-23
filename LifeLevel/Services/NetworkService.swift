@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 typealias CitiesListCompletionHandler = (_ success: Bool, _ value: [CityListEntity]?, _ error: Error?) -> Void
+typealias CitiesDetailsdCompletionHandler = (_ success: Bool, _ value: CityDetailsEntity?, _ error: Error?) -> Void
 
 class NetworkService {
     
@@ -51,4 +52,45 @@ class NetworkService {
         }
     }
     
+    func getCityDetails(with link: String, handler: @escaping CitiesDetailsdCompletionHandler) {
+        Alamofire.request(link, method: .get).responseJSON { response in
+            guard response.result.isSuccess else {
+                handler(false, nil, response.result.error)
+                return
+            }
+            
+            guard let value = response.value as? [String: Any] else {
+                handler(false, nil, nil)
+                return
+            }
+            
+            guard let fullName = value["full_name"] as? String,
+                  let name = value["name"] as? String,
+                  let geonameId = value["geoname_id"] as? Int,
+                  let population = value["population"] as? Int else {
+                handler(false, nil, nil)
+                return
+            }
+            
+            guard let location = value["location"] as? [String: Any] else {
+                handler(false, nil, nil)
+                return
+            }
+            
+            guard let positions = location["latlon"] as? [String: Double] else {
+                handler(false, nil, nil)
+                return
+            }
+            
+            guard let latitude = positions["latitude"],
+                  let longitude = positions["longitude"] else {
+                handler(false, nil, nil)
+                return
+            }
+            
+            let result = CityDetailsEntity(latitude: latitude, longitude: longitude, geonameId: geonameId, fullName: fullName, name: name, population: population)
+            
+            handler(true, result, nil)
+        }
+    }
 }

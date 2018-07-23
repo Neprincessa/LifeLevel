@@ -55,7 +55,7 @@ private extension CitiesListViewController {
         NetworkService.shared.getCitiesList { [weak self] (success, value, error) in
             guard let `self` = self else { return }
             if success, let cities = value {
-                self.citiesArray = cities.map { City(nameOfCity: $0.fullName) }
+                self.citiesArray = cities.map { City(nameOfCity: $0.fullName, link: $0.datailLink) }
                 if self.citiesArray.isEmpty {
                     self.setEmptyState()
                 } else {
@@ -133,10 +133,19 @@ extension CitiesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return CitiesListTableViewCell.estimateHeight
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let currentCity = citiesArray[indexPath.row]
+        NetworkService.shared.getCityDetails(with: currentCity.link) { (success, result, error) in
+            print(result)
+        }
+    }
 }
 
 // MARK: - Data
 
 struct City {
     let nameOfCity: String
+    let link: String
 }
