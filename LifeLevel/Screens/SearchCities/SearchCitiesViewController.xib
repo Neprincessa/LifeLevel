@@ -19,13 +19,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yp5-Bf-Oi9">
-                    <rect key="frame" x="145" y="264" width="49" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </switch>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gdemozhnooformitzelenuyukartuvmogileve_C93A066C.png" translatesAutoresizingMaskIntoConstraints="NO" id="PZI-MG-1vh">
+                    <rect key="frame" x="0.0" y="120" width="375" height="447"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PZI-MG-1vh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Yo-Rn-wj2"/>
+                <constraint firstItem="PZI-MG-1vh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="dKC-w4-dZQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PZI-MG-1vh" secondAttribute="bottom" constant="100" id="ecK-OM-8pp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PZI-MG-1vh" secondAttribute="trailing" id="vXJ-hW-phy"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="gdemozhnooformitzelenuyukartuvmogileve_C93A066C.png" width="940" height="540"/>
+    </resources>
 </document>

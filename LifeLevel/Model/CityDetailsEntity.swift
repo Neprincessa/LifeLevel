@@ -2,7 +2,7 @@
 //  CityDetailsEntity.swift
 //  LifeLevel
 //
-//  Created by Александр Чаусов on 24.07.2018.
+//  Created by Анастасия Худояроваon 24.07.2018.
 //  Copyright © 2018 Neprincessa. All rights reserved.
 //
 

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CityDetailsViewController" customModule="LifeLevel" customModuleProvider="target">
             <connections>
+                <outlet property="cityDetailsTableView" destination="avS-bM-Ngg" id="L0E-N1-Q5S"/>
+                <outlet property="mapView" destination="4yC-it-9YQ" id="UFv-Hn-D6T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,60 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="avS-bM-Ngg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4yC-it-9YQ">
+                    <rect key="frame" x="0.0" y="20" width="320" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="61M-lY-ntW"/>
+                    </constraints>
+                </mapView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Полное название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFc-kE-LvK">
+                    <rect key="frame" x="16" y="286" width="140" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Россия, Москва" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-bT-TW6">
+                    <rect key="frame" x="16" y="315" width="128" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Население" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkt-qK-8dl">
+                    <rect key="frame" x="16" y="362" width="89" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10000000 человек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpF-ye-LJ3">
+                    <rect key="frame" x="16" y="391" width="150" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FcC-6v-SV1"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="I2l-ku-KE1"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ILN-xr-JoY"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JT1-de-1jn"/>
+                <constraint firstItem="4yC-it-9YQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P0y-3r-2we"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SdW-Ja-P1K"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ZJ1-Dm-oLs"/>
+                <constraint firstItem="4yC-it-9YQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rLz-vl-2jd"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="uHZ-ie-dqH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4yC-it-9YQ" secondAttribute="trailing" id="w5A-ZY-tih"/>
+                <constraint firstItem="avS-bM-Ngg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="w5z-KD-Eec"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

@@ -28,6 +28,9 @@ class CitiesListViewController: UIViewController {
         loadCities()
     }
 
+//        func configure(with details: City) {
+//            self.details = details
+//        }
 }
 
 private extension CitiesListViewController {

@@ -23,7 +23,7 @@ class LLNavigationController: UINavigationController {
 private extension LLNavigationController {
     
     func configureAppearance() {
-        navigationBar.barTintColor = ColorConstants.mainColor
+        navigationBar.tintColor = UIColor.white
         navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         navigationBar.barStyle = .black
     }
@@ -70,7 +70,7 @@ extension UINavigationBar {
         var updatedFrame = bounds
         updatedFrame.size.height += self.frame.origin.y
         updatedFrame.size.height += UIApplication.shared.statusBarFrame.height
-        var gradientLayer = CAGradientLayer(frame: updatedFrame, colors: colors)
+        let gradientLayer = CAGradientLayer(frame: updatedFrame, colors: colors)
         setBackgroundImage(gradientLayer.createGradientImage(), for: UIBarMetrics.default)
     }
 }
