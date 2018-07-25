@@ -2,7 +2,7 @@
 //  UITableView.swift
 //  LifeLevel
 //
-//  Created by Александр Чаусов on 22.07.2018.
+//  Created by Анастасия Худоярова on 22.07.2018.
 //  Copyright © 2018 Neprincessa. All rights reserved.
 //
 

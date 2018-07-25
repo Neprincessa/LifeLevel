@@ -35,6 +35,7 @@ class CitiesListTableViewCell: UITableViewCell {
     
 }
 
+//MARK: - Extensions
 private extension CitiesListTableViewCell {
     
     func configureLabels() {

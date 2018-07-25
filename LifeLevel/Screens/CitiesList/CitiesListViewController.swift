@@ -11,11 +11,13 @@ import UIKit
 
 class CitiesListViewController: UIViewController {
     
+    //MARK: - IBOutlet
     @IBOutlet fileprivate weak var citiesTableView: UITableView!
     @IBOutlet fileprivate weak var loaderView: UIView!
     @IBOutlet fileprivate weak var loader: UIActivityIndicatorView!
     @IBOutlet fileprivate weak var infoLabel: UILabel!
     
+    //MARK: - Properties
     fileprivate var citiesArray: [City] = []
     
     override func viewDidLoad() {
@@ -27,12 +29,9 @@ class CitiesListViewController: UIViewController {
         
         loadCities()
     }
-
-//        func configure(with details: City) {
-//            self.details = details
-//        }
 }
 
+//MARK: - Extension
 private extension CitiesListViewController {
     
     func configureNavigationBar() {
@@ -47,7 +46,7 @@ private extension CitiesListViewController {
     }
     
     func configureLoader() {
-        loaderView.backgroundColor = ColorConstants.mainColor.withAlphaComponent(0.8)
+       loaderView.backgroundColor = ColorConstants.mainColor.withAlphaComponent(0.8)
         loaderView.layer.cornerRadius = 15
         loaderView.layer.masksToBounds = true
         loader.activityIndicatorViewStyle = .whiteLarge
